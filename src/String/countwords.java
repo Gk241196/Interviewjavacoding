@@ -5,5 +5,6 @@ public class countwords {
         String[] ch=str.split(" ");
         int length=ch.length;
         System.out.println("Number of words are: " + length);
+        
 	}
 }

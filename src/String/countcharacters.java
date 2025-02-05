@@ -9,6 +9,7 @@ public class countcharacters {
 	    	int words=ch1.length;
 	    	System.out.println("Number of words in string " +words);
 	    }
+		
 	}
 
 

@@ -9,6 +9,8 @@ public class checkpalindrome {
 	                isPalindrome = false;
 	                break;
 	            }
+
+				
 	        }
 	        System.out.println("Is Palindrome: " + isPalindrome);
 	    }

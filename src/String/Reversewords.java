@@ -3,21 +3,13 @@ package String;
 public class Reversewords {
     public static void main(String[] args) {
         String sentence = "Ganesh kumar Learning Automation";
+        String[] words = sentence.split(" ");
         StringBuilder reversedSentence = new StringBuilder();
-        int start = 0;
 
-        for (int i = 0; i <= sentence.length(); i++) {
-            if (i == sentence.length() || sentence.charAt(i) == ' ') {
-                for (int j = i - 1; j >= start; j--) {
-                    reversedSentence.append(sentence.charAt(j));
-                }
-                if (i != sentence.length()) {
-                    reversedSentence.append(" ");
-                }
-                start = i + 1;
-            }
+        for (String word : words) {
+            reversedSentence.append(new StringBuilder(word).reverse().toString()).append(" ");
         }
 
-        System.out.println("Reversed Sentence: " + reversedSentence.toString());
+        System.out.println("Reversed Sentence: " + reversedSentence.toString().trim());
     }
 }

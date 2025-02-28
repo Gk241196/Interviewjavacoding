@@ -1,7 +1,7 @@
 package String;
 import java.util.Arrays;
 public class checkanagrams {
-	    public static void main(String[] args) {
+	    public static void main(String[] argg) {
 	        String str1 = "listen";
 	        String str2 = "silent";
 	        // Check if sorted versions of the strings are equal

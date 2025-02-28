@@ -6,7 +6,6 @@ public class countcharacters {
         System.out.println("Number of characters in string: " + name.length());
         System.out.println("Number of words in string: " + countWords(name));
     }
-
     public static int countWords(String str) {
         int wordCount = 0;
         boolean isWord = false;

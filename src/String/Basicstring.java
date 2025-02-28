@@ -1,49 +1,14 @@
 package String;
-
 public class Basicstring {
-    public static void main(String args[]) {
+    public static void main(String argg[]) {
         String name = "Ganesh kumar";
-        System.out.println("Given string in upper case as " + toUpperCase(name));
-        System.out.println("Given string in lower case as " + toLowerCase(name));
+        System.out.println("Given string in upper case as " + name.toUpperCase());
+        System.out.println("Given string in lower case as " + name.toLowerCase());
         System.out.println("Finding character is " + name.charAt(5));
-        System.out.println("Finding index is " + indexOf(name, "Ganesh"));
-    }
-
-    public static String toUpperCase(String str) {
-        char[] chars = str.toCharArray();
-        for (int i = 0; i < chars.length; i++) {
-            if (chars[i] >= 'a' && chars[i] <= 'z') {
-                chars[i] = (char) (chars[i] - 'a' + 'A');
-            }
-        }
-        return new String(chars);
-    }
-
-    public static String toLowerCase(String str) {
-        char[] chars = str.toCharArray();
-        for (int i = 0; i < chars.length; i++) {
-            if (chars[i] >= 'A' && chars[i] <= 'Z') {
-                chars[i] = (char) (chars[i] - 'A' + 'a');
-            }
-        }
-        return new String(chars);
-    }
-
-    public static int indexOf(String str, String substr) {
-        char[] strChars = str.toCharArray();
-        char[] substrChars = substr.toCharArray();
-        for (int i = 0; i <= strChars.length - substrChars.length; i++) {
-            int j;
-            for (j = 0; j < substrChars.length; j++) {
-                if (strChars[i + j] != substrChars[j]) {
-                    break;
-                }
-            }
-            if (j == substrChars.length) {
-                return i;
-            }
-        }
-        return -1;
+        System.out.println("Finding index is " + name.indexOf("Ganesh"));
+        System.out.println("Substring from index 0 to 6 is " + name.substring(0, 6));
+        System.out.println("Replacing 'kumar' with 'KUMAR' gives " + name.replace("kumar", "KUMAR"));
+        System.out.println("Length of the string is " + name.length());
     }
 }
 
